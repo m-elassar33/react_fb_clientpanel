@@ -55,7 +55,7 @@ class Settings extends Component {
                 />
               </div>
               <div className="form-group">
-                <label>Set Balance On Add</label>{' '}
+                <label>Disable Balance On Add</label>{' '}
                 <input
                   type="checkbox"
                   name="disableBalanceOnAdd"
@@ -64,7 +64,7 @@ class Settings extends Component {
                 />
               </div>
               <div className="form-group">
-                <label>Set Balance On Edit</label>{' '}
+                <label>Disable Balance On Edit</label>{' '}
                 <input
                   type="checkbox"
                   name="disableBalanceOnEdit"
