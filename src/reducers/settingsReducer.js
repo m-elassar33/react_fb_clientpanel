@@ -4,28 +4,22 @@ import {
   ALLOW_REGISTERATION
 } from '../actions/types';
 
-const initialState = {
-  disableBalanceOnAdd: true,
-  disableBalanceOnEdit: false,
-  allowRegisteration: false
-};
-
-export default function(state = initialState, action) {
+export default function(state = {}, action) {
   switch (action.type) {
     case DISABLE_BALANCE_ON_ADD:
       return {
         ...state,
-        disableBalanceOnAdd: !state.disableBalanceOnAdd
+        disableBalanceOnAdd: action.payload
       };
     case DISABLE_BALANCE_ON_EDIT:
       return {
         ...state,
-        disableBalanceOnEdit: !state.disableBalanceOnEdit
+        disableBalanceOnEdit: action.payload
       };
     case ALLOW_REGISTERATION:
       return {
         ...state,
-        allowRegisteration: !state.allowRegisteration
+        allowRegisteration: action.payload
       };
     default:
       return state;
