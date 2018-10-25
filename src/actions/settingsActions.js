@@ -41,13 +41,13 @@ export const setAllowRegisteration = () => {
   const settings = JSON.parse(localStorage.getItem('settings'));
 
   // Toggle
-  settings.allowRegistration = !settings.allowRegistration;
+  settings.allowRegisteration = !settings.allowRegisteration;
 
   // Set back to localStorage
   localStorage.setItem('settings', JSON.stringify(settings));
 
   return {
     type: ALLOW_REGISTERATION,
-    payload: settings.allowRegistration
+    payload: settings.allowRegisteration
   };
 };
