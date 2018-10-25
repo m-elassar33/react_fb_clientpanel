@@ -4,13 +4,13 @@ import {
   ALLOW_REGISTERATION
 } from './types';
 
-export const setDisabledBalanceOnAdd = () => {
+export const setDisableBalanceOnAdd = () => {
   return {
     type: DISABLE_BALANCE_ON_ADD
   };
 };
 
-export const setDisabledBalanceOnEdit = () => {
+export const setDisableBalanceOnEdit = () => {
   return {
     type: DISABLE_BALANCE_ON_EDIT
   };
